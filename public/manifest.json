@@ -1,0 +1,16 @@
+{
+  "name": "ORION GLOBAL",
+  "short_name": "ORION GLOBAL",
+  "description": "Export, Import, Vanning & Shipping Services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#06162D",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

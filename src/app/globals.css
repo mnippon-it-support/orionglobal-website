@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-bg: #FFFFFF;
+  --color-soft-white: #FFFFFF;
+  --color-warm-gray: #FFFFFF;
+  
+  --color-gold: #C89235;
+  --color-gold-light: #D9B15F;
+  --color-gold-dark: #9F6B1E;
+  
+  --color-navy: #06162D;
+  --color-navy-text: #0B1220;
+  
+  --color-border-light: #E5E7EB;
+  --color-border-warm: #E5E7EB;
+  
+  --font-serif: var(--font-cormorant), "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
+  --font-sans: var(--font-jakarta), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #0B1220;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Custom Utilities or Styles if needed */
+.glass-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border-warm);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #06162D 0%, #C89235 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar matching the premium aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C89235;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9F6B1E;
+}
