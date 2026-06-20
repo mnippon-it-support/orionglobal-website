@@ -340,7 +340,7 @@ export default function HomePage() {
               {t("getQuote")}
             </Link>
             <a
-              href="https://wa.me/959123456789"
+              href="https://wa.me/819040881991"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-navy-text font-bold py-4 px-10 rounded-md tracking-wider transition-colors duration-300 w-full sm:w-auto text-center uppercase text-base"

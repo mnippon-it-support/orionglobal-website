@@ -31,7 +31,7 @@ export async function POST(request: Request) {
 
     // SIMULATED ACTIONS:
     // 1. Send admin alert mail:
-    //    `await sendEmail({ to: 'admin@orionglobal.com', subject: 'New Lead', content: ... })`
+    //    `await sendEmail({ to: 'admin@orionglobal.jp', subject: 'New Lead', content: ... })`
     // 2. Send automatic confirmation email to user:
     //    `await sendEmail({ to: email, subject: 'Inquiry Received', content: ... })`
     // 3. Save to Notion or Supabase database:

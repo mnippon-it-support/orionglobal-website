@@ -14,9 +14,9 @@
     "contactInfo": "連絡先情報",
     "hours": "営業時間",
     "hoursDetail": "8:00 - 18:00（月〜金）",
-    "address": "No.123, Business Center, ヤンゴン, ミャンマー (仮)",
-    "phone": "+95 9 123 456 789 (仮)",
-    "email": "info@orionglobal.com (仮)",
+    "address": "〒498-0041 愛知県弥富市芝井八丁目1番2",
+    "phone": "0567-31-6943",
+    "email": "info@orionglobal.jp",
     "rights": "© 2026 ORION GLOBAL. All rights reserved.",
     "privacyPolicy": "プライバシーポリシー",
     "termsOfService": "利用規約"
@@ -55,12 +55,16 @@
     "title": "会社概要",
     "subtitle": "安全性・スピード・誠実さを重視し、グローバル市場をつなぐ架け橋となります。",
     "companyProfile": "企業情報",
-    "established": "設立",
+    "established": "設立日",
+    "establishedDate": "2020年7月21日",
     "ceo": "代表者",
+    "ceoName": "PHYO WAILWIN (ピョーウエイリン)",
     "businessType": "事業内容",
     "businessTypeDesc": "国際貿易、物流、バンニング、海上輸送手配、通関サポート等",
     "location": "所在地",
     "phone": "電話番号",
+    "fax": "FAX番号",
+    "faxNumber": "0567-31-6945",
     "email": "メールアドレス",
     "valuesTitle": "企業理念・バリュー",
     "valuesSubtitle": "私たちが日々の業務において大切にしている5つの行動指針です。",
@@ -74,15 +78,14 @@
     "value4Desc": "お客様のビジネスの成功と満足度を最も重視します。",
     "value5Title": "パートナーシップ (Partnership)",
     "value5Desc": "関わるすべての人々と良好な関係を築き、共に成長していきます。",
-    "ceoName": "Kyaw Zay Yar (代表 / 仮)",
     "brandConceptTitle": "ブランドコンセプト",
     "brandConceptTagline": "Better Today, Greater Tomorrow.",
     "brandConceptDesc": "ORION GLOBALにとって、このタグラインは約束です。すべてのお取引において、安全性の向上、物流ボトルの解消、および未来に向けたより良い成果の創造に全力で取り組んでいます。",
     "valuesBadge": "行動指針",
     "locationBadge": "アクセス",
     "locationTitle": "本社所在地",
-    "mapPlaceholder": "Googleマップ（配置スペース）",
-    "mapPlaceholderDesc": "No.123, Business Center, ヤンゴン, ミャンマー\n（正式なマップ座標情報が確定次第、インタラクティブマップを埋め込みます）",
+    "mapPlaceholder": "Googleマップ",
+    "mapPlaceholderDesc": "〒498-0041 愛知県弥富市芝井八丁目1番2\n（愛知県弥富市芝井8-1-2）",
     "openMaps": "Googleマップで開く"
   },
   "Services": {
@@ -218,7 +221,7 @@
     "sec4Title": "4. 免責事項",
     "sec4Text": "天災、仕向け地の通関規制、港湾ストライキ、その他不可抗力による輸送の遅延、貨物の差し押さえ等について、当社は一切の責任を負いかねます。",
     "sec5Title": "5. 準拠法",
-    "sec5Text": "本規約は、当社の本社所在地であるミャンマー国の法律を準拠法とし、同法に基づいて解釈されるものとします。"
+    "sec5Text": "本規約は、当社の本社所在地である日本国の法律を準拠法とし、同法に基づいて解釈されるものとします。"
   },
   "Privacy": {
     "title": "プライバシーポリシー",
@@ -232,6 +235,6 @@
     "sec4Title": "4. クッキーおよびアクセス分析",
     "sec4Text": "ウェブサイトの利便性向上や利用状況統計を収集する目的で、クッキー（Cookies）を使用する場合があります。",
     "sec5Title": "5. お問い合わせ窓口",
-    "sec5Text": "プライバシーポリシーに関するご質問や個人情報の開示・削除のご依頼は、info@orionglobal.com までご連絡ください。"
+    "sec5Text": "プライバシーポリシーに関するご質問や個人情報の開示・削除のご依頼は、info@orionglobal.jp までご連絡ください。"
   }
 }

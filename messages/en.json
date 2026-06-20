@@ -14,9 +14,9 @@
     "contactInfo": "Contact Information",
     "hours": "Business Hours",
     "hoursDetail": "8:00 - 18:00 (Mon - Fri)",
-    "address": "No.123, Business Center, Yangon, Myanmar",
-    "phone": "+95 9 123 456 789",
-    "email": "info@orionglobal.com",
+    "address": "498-0041 AICHIKEN YATOMISHI SHIBAI 8-1-2, Japan",
+    "phone": "0567-31-6943",
+    "email": "info@orionglobal.jp",
     "rights": "© 2026 ORION GLOBAL. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
@@ -55,12 +55,16 @@
     "title": "About Us",
     "subtitle": "Connecting global markets with safety, speed, and integrity.",
     "companyProfile": "Company Profile",
-    "established": "Established",
+    "established": "Established Date",
+    "establishedDate": "July 21, 2020",
     "ceo": "Representative Director",
+    "ceoName": "PHYO WAILWIN",
     "businessType": "Business Area",
     "businessTypeDesc": "International Trade, Logistics, Vanning, Ocean Freight & Customs Clearance Support",
     "location": "Headquarters",
     "phone": "Phone Number",
+    "fax": "Fax Number",
+    "faxNumber": "0567-31-6945",
     "email": "Email Address",
     "valuesTitle": "Our Core Values",
     "valuesSubtitle": "The principles that guide our business operations every single day.",
@@ -74,15 +78,14 @@
     "value4Desc": "Your satisfaction and business success are our ultimate priorities.",
     "value5Title": "Partnership",
     "value5Desc": "We build long-term relationships and grow together with our partners.",
-    "ceoName": "Kyaw Zay Yar (Placeholder)",
     "brandConceptTitle": "Our Brand Concept",
     "brandConceptTagline": "Better Today, Greater Tomorrow.",
     "brandConceptDesc": "At ORION GLOBAL, this tagline is our promise. In every transaction, we dedicate ourselves to improving safety, reducing shipping bottlenecks, and building greater outcomes for tomorrow.",
     "valuesBadge": "Pillars of Excellence",
     "locationBadge": "Location",
     "locationTitle": "Our Headquarters Location",
-    "mapPlaceholder": "Google Map Placeholder",
-    "mapPlaceholderDesc": "No.123, Business Center, Yangon, Myanmar.\n(The live interactive map widget will be integrated here upon receipt of final coordinate configurations.)",
+    "mapPlaceholder": "Google Map",
+    "mapPlaceholderDesc": "498-0041 AICHIKEN YATOMISHI SHIBAI 8-1-2, Japan",
     "openMaps": "Open in Google Maps"
   },
   "Services": {
@@ -218,7 +221,7 @@
     "sec4Title": "4. Limitation of Liability",
     "sec4Text": "ORION GLOBAL is not liable for transport delays, custom clearance holds, or logistics bottlenecks caused by force majeure events, administrative rules, or border inspections.",
     "sec5Title": "5. Governing Law",
-    "sec5Text": "These Terms are governed by and construed in accordance with the laws of Myanmar (our headquarters location), without regard to its conflict of law principles."
+    "sec5Text": "These Terms are governed by and construed in accordance with the laws of Japan (our headquarters location), without regard to its conflict of law principles."
   },
   "Privacy": {
     "title": "Privacy Policy",
@@ -232,6 +235,6 @@
     "sec4Title": "4. Cookies and Analytics",
     "sec4Text": "Our website may use cookies to improve user experience and compile aggregated site performance analytics.",
     "sec5Title": "5. Contact Us",
-    "sec5Text": "If you have any questions about this Privacy Policy or wish to request data deletion, please contact us at info@orionglobal.com."
+    "sec5Text": "If you have any questions about this Privacy Policy or wish to request data deletion, please contact us at info@orionglobal.jp."
   }
 }

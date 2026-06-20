@@ -38,7 +38,7 @@ export default function WhatsAppCTA() {
           <span className="font-bold text-[13px] text-navy mb-1">{t("chat")}</span>
           <span className="text-gray-500 leading-normal mb-2">{t("online")}</span>
           <a
-            href="https://wa.me/959123456789" // Mock number
+            href="https://wa.me/819040881991" // Mock number
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#25D366] hover:bg-[#20ba5a] text-white text-center font-bold py-1.5 px-3 rounded text-[11px] transition-colors duration-250 cursor-pointer"
@@ -50,7 +50,7 @@ export default function WhatsAppCTA() {
 
       {/* Floating Action Button */}
       <a
-        href="https://wa.me/959123456789" // Mock number
+        href="https://wa.me/819040881991" // Mock number
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => setShowTooltip(false)}

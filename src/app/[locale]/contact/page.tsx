@@ -107,7 +107,7 @@ export default function ContactPage() {
                 {t("whatsappDesc")}
               </p>
               <a
-                href="https://wa.me/959123456789"
+                href="https://wa.me/819040881991"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#25D366] hover:bg-[#20ba5a] text-white text-center font-bold text-xs py-3.5 px-6 rounded tracking-wide transition-colors cursor-pointer inline-flex items-center gap-2 shadow uppercase"

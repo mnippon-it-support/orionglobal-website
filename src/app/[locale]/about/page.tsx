@@ -19,11 +19,12 @@ export default function AboutPage() {
   ];
 
   const profileItems = [
-    { label: t("established"), value: "2018" },
+    { label: t("established"), value: t("establishedDate") },
     { label: t("ceo"), value: t("ceoName") },
     { label: t("businessType"), value: t("businessTypeDesc") },
     { label: t("location"), value: tFooter("address") },
     { label: t("phone"), value: tFooter("phone") },
+    { label: t("fax"), value: t("faxNumber") },
     { label: t("email"), value: tFooter("email") },
     { label: tFooter("hours"), value: tFooter("hoursDetail") }
   ];
