@@ -1,10 +1,17 @@
-"use client";
-
 import React from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function PrivacyPage() {
-  const t = useTranslations("Privacy");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Privacy" });
+  return {
+    title: t("title"),
+  };
+}
+
+export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Privacy" });
 
   const sections = [
     { title: t("sec1Title"), text: t("sec1Text") },

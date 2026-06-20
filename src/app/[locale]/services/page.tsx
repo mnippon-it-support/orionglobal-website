@@ -1,13 +1,20 @@
-"use client";
-
 import React from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
-export default function ServicesPage() {
-  const t = useTranslations("Services");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Services" });
+  return {
+    title: t("title"),
+  };
+}
+
+export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Services" });
 
   const vanningSteps = [
     { number: "01", title: t("vanningStep1"), desc: t("vanningStep1Desc") },

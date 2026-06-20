@@ -1,14 +1,21 @@
-"use client";
-
 import React, { Suspense } from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 
-export default function ContactPage() {
-  const t = useTranslations("Contact");
-  const tFooter = useTranslations("Footer");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Contact" });
+  return {
+    title: t("title"),
+  };
+}
+
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Contact" });
+  const tFooter = await getTranslations({ locale, namespace: "Footer" });
 
   return (
     <div className="flex flex-col min-h-screen bg-white">

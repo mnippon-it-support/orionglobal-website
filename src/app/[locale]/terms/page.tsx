@@ -1,10 +1,17 @@
-"use client";
-
 import React from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function TermsPage() {
-  const t = useTranslations("Terms");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Terms" });
+  return {
+    title: t("title"),
+  };
+}
+
+export default async function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Terms" });
 
   const sections = [
     { title: t("sec1Title"), text: t("sec1Text") },

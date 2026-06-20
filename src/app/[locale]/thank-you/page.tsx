@@ -1,12 +1,19 @@
-"use client";
-
 import React from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { CheckCircle, ArrowLeft } from "lucide-react";
 
-export default function ThankYouPage() {
-  const t = useTranslations("Contact");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Contact" });
+  return {
+    title: t("successTitle"),
+  };
+}
+
+export default async function ThankYouPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Contact" });
 
   return (
     <div className="flex-grow flex items-center justify-center py-20 bg-white min-h-[70vh]">

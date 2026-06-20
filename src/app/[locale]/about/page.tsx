@@ -1,14 +1,21 @@
-"use client";
-
 import React from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Briefcase } from "lucide-react";
 import Image from "next/image";
 
-export default function AboutPage() {
-  const t = useTranslations("About");
-  const tHome = useTranslations("Home");
-  const tFooter = useTranslations("Footer");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "About" });
+  return {
+    title: t("title"),
+  };
+}
+
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "About" });
+  const tHome = await getTranslations({ locale, namespace: "Home" });
+  const tFooter = await getTranslations({ locale, namespace: "Footer" });
 
   const values = [
     { title: t("value1Title"), desc: t("value1Desc"), number: "01" },

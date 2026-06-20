@@ -1,13 +1,20 @@
-"use client";
-
 import React from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { ArrowRight, Compass, ShieldAlert } from "lucide-react";
 import Image from "next/image";
 
-export default function ProductsPage() {
-  const t = useTranslations("Products");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Products" });
+  return {
+    title: t("title"),
+  };
+}
+
+export default async function ProductsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Products" });
 
   const products = [
     {
