@@ -37,9 +37,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     description: t("heroSubtitle"),
     icons: {
-      icon: "/icon.svg",
+      icon: [
+        { url: "/icon.svg", type: "image/svg+xml" },
+        { url: "/icon-32.png", type: "image/png", sizes: "32x32" }
+      ],
       shortcut: "/favicon.ico",
-      apple: "/icon.svg",
+      apple: [
+        { url: "/icon-180.png", type: "image/png", sizes: "180x180" }
+      ]
     },
     manifest: "/manifest.json",
   };
