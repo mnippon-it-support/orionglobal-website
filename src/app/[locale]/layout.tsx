@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+import LoadingScreen from "@/components/LoadingScreen";
 import "../globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -71,6 +72,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${plusJakartaSans.variable} ${cormorantGaramond.variable}`}>
       <body className="antialiased min-h-screen bg-primary-bg text-navy-text flex flex-col font-sans">
         <NextIntlClientProvider messages={messages}>
+          <LoadingScreen />
           <Navbar />
           {/* Offset layout for the fixed glass header */}
           <main className="flex-grow pt-[74px] md:pt-[78px]">

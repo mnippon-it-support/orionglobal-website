@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
 import { Upload } from "lucide-react";
 
 export default function ContactForm() {
